@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+*/node_modules/
+venv/
+*/venv/
+.venv/
+*/.venv/
+env/
+*/env/
+
+# Environment and sensitive keys
+.env
+.env*
+!.env.example
+*.env
+
+# Python artifacts
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.log
+backend_errors.log
+
+# Next.js build
+.next/
+*/.next/
+out/
+build/
+dist/
+
+# Media & generated files / storage (large video & audio files)
+output_data/
+*/output_data/
+storage/
+*/storage/
+*.mp4
+*.mp3
+*.wav
+*.ass
+*.srt
+*.avi
+*.mkv
+
+# Databases
+*.db
+*.sqlite3
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

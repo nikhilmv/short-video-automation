@@ -1,0 +1,17 @@
+Since we added new fields to the database model, you need to generate and apply a database migration. Then, you can start the backend server. Run the following commands in the terminal (make sure you are inside the fastapi-auth-project directory and your virtual environment venv is activated):
+
+python -m alembic revision --autogenerate -m "Add new user fields"
+
+python -m alembic upgrade head
+
+venv\Scripts\python seed.py
+
+python -m uvicorn app.main:app --host 127.0.0.1 --port 5000 --reload
+
+log in using admin@example.com and password123
+
+
+python -m uvicorn app.main:app --port 5000 --reload
+ 
+python -m alembic revision --autogenerate -m "Add creations table"
+python -m alembic upgrade head

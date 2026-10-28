@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-surface text-ink antialiased;
+}
+
+/* ---------- Layout ---------- */
+.page {
+  @apply min-h-screen flex items-center justify-center px-4;
+}
+
+.shell {
+  @apply flex min-h-screen;
+}
+
+.main {
+  @apply flex-1 flex flex-col;
+}
+
+.content {
+  @apply p-6 flex-1;
+}
+
+/* ---------- Cards / auth boxes ---------- */
+.card {
+  @apply bg-white border border-border rounded shadow-sm p-6;
+}
+
+.auth-card {
+  @apply card w-full max-w-sm;
+}
+
+.auth-title {
+  @apply text-xl font-semibold mb-1;
+}
+
+.auth-subtitle {
+  @apply text-sm text-gray-500 mb-6;
+}
+
+/* ---------- Forms ---------- */
+.field {
+  @apply mb-4;
+}
+
+.label {
+  @apply block text-sm font-medium mb-1;
+}
+
+.input {
+  @apply w-full border border-border rounded px-3 py-2 text-sm outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500;
+}
+
+.error-text {
+  @apply text-sm text-red-600 mt-2;
+}
+
+.help-text {
+  @apply text-sm text-gray-500 mt-4 text-center;
+}
+
+.link {
+  @apply text-brand-600 hover:underline;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  @apply inline-flex items-center justify-center rounded px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply btn bg-brand-600 text-white hover:bg-brand-700;
+}
+
+.btn-secondary {
+  @apply btn bg-white border border-border text-ink hover:bg-gray-50;
+}
+
+.btn-danger {
+  @apply btn bg-red-600 text-white hover:bg-red-700;
+}
+
+.btn-block {
+  @apply w-full;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  @apply w-60 shrink-0 bg-white border-r border-border flex flex-col;
+}
+
+.sidebar-brand {
+  @apply px-5 py-4 text-lg font-semibold border-b border-border;
+}
+
+.sidebar-nav {
+  @apply flex-1 py-4 flex flex-col gap-1;
+}
+
+.sidebar-link {
+  @apply px-5 py-2 text-sm text-gray-600 hover:bg-surface hover:text-ink;
+}
+
+.sidebar-link-active {
+  @apply sidebar-link bg-brand-50 text-brand-700 font-medium border-r-2 border-brand-600;
+}
+
+/* ---------- Topbar ---------- */
+.topbar {
+  @apply h-14 border-b border-border bg-white flex items-center justify-between px-6;
+}
+
+/* ---------- Page headers ---------- */
+.page-title {
+  @apply text-xl font-semibold;
+}
+
+.page-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+/* ---------- Stat cards ---------- */
+.stat-card {
+  @apply card;
+}
+
+.stat-label {
+  @apply text-sm text-gray-500;
+}
+
+.stat-value {
+  @apply text-2xl font-semibold mt-1;
+}
+
+/* ---------- Table ---------- */
+.table-wrap {
+  @apply card p-0 overflow-hidden;
+}
+
+.table {
+  @apply w-full text-sm;
+}
+
+.table th {
+  @apply text-left font-medium text-gray-500 bg-surface px-4 py-3 border-b border-border;
+}
+
+.table td {
+  @apply px-4 py-3 border-b border-border;
+}
+
+.table tr:last-child td {
+  @apply border-b-0;
+}
+
+/* ---------- Badge ---------- */
+.badge {
+  @apply inline-block px-2 py-0.5 rounded text-xs font-medium;
+}
+
+.badge-active {
+  @apply badge bg-green-100 text-green-700;
+}
+
+.badge-inactive {
+  @apply badge bg-gray-100 text-gray-600;
+}
