@@ -4,6 +4,14 @@
 
 ---
 
+## 🎬 Live Demo & Video Showcase
+
+[![AutoShorts AI Demo](https://img.youtube.com/vi/zTOwQTtqPo4/maxresdefault.jpg)](https://www.youtube.com/watch?v=zTOwQTtqPo4 "Click to watch the demo on YouTube")
+
+> 💡 **[▶️ Click here to watch the full walkthrough on YouTube](https://www.youtube.com/watch?v=zTOwQTtqPo4)**
+
+---
+
 ## 🌟 Overview
 
 **AutoShorts AI** is a full-stack, autonomous video production pipeline. Given a prompt or story text, it breaks down the narrative into visual beats, generates high-quality realistic voice narration with word-level subtitle timestamps, queries stock video footage, and programmatically stitches, crops, and burns captions into ready-to-post 9:16 videos.
